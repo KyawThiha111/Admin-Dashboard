@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- The first Navbar section -->
+    <div class="container-fluid sticky-top">
+      <div
+        id="firstnavbar-row"
+        class="row justify-content-center align-items-center"
+      >
+        <div id="navbar-first" class="col-lg-10 py-3">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-3 fw-bold ms-3" href="#">
+                GAMIX
+                <i class="bi bi-bar-chart-line"></i>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto lead">
+                  <a class="nav-link active me-5" aria-current="page" href="#">
+                    <h3 class="d-inline-block me-3">
+                      <i class="bi bi-speedometer2"></i>
+                    </h3>
+                    DASHBOARD</a
+                  >
+                  <a class="nav-link me-5" href="#">
+                    <h3 class="d-inline-block me-3">
+                      <i class="bi bi-people-fill"></i>
+                    </h3>
+                    FRIENDS</a
+                  >
+                  <a class="nav-link me-5" href="#">
+                    <h3 class="d-inline-block me-3">
+                      <i class="bi bi-stars"></i>
+                    </h3>
+                    RANKING</a
+                  >
+                  <a class="nav-link disabled me-5" aria-disabled="true">
+                    <h3 class="d-inline-block me-3">
+                      <i class="bi bi-trophy"></i>
+                    </h3>
+                    TOURNAMENTS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div
+          id="navbar-first-drop-down"
+          class="col-2 d-none d-lg-block text-light"
+        >
+          <!-- Drop down -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn dropdown-toggle border-0 text-light"
+              data-bs-toggle="dropdown"
+              data-bs-display="static"
+              aria-expanded="false"
+            >
+              THEDUDE
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+              <li>
+                <button class="dropdown-item" type="button">Action</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  Another action
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  Something else here
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The first Navbar section ends here -->
+
+    <!-- The second nav and main section -->
+    <section class="">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Second nav starts -->
+          <div id="second-nav" class="d-none d-lg-block col-lg-2">
+            <ul class="list-group">
+              <li class="list-group-item" aria-disabled="true">YOUR GAMES</li>
+              <li class="list-group-item">Counter Strikes</li>
+              <li class="list-group-item">Quake Lives</li>
+              <li class="list-group-item">Unusual Tournament</li>
+              <li class="list-group-item">Call Of Duty</li>
+              <li class="list-group-item">World Of WarCraft</li>
+            </ul>
+            <hr class="text-light fw-bold border-5" />
+            <ul class="list-group">
+              <li class="list-group-item" aria-disabled="true">YOUR FILES</li>
+              <li class="list-group-item">
+                <span class="me-2"><i class="bi bi-film"></i></span>
+                Demos
+              </li>
+              <li class="list-group-item">
+                <span class="me-2"><i class="bi bi-camera-video"></i></span>
+                Videos
+              </li>
+              <li class="list-group-item">
+                <span class="me-2"><i class="bi bi-gear"></i></span>
+                Configs
+              </li>
+            </ul>
+          </div>
+          <!-- Second nav ends -->
+
+          <!-- Body start -->
+          <div class="col-lg-10 body-container">
+            <h1 class="mb-5 mt-3 text-center text-lg-start">
+              Dashboard <span>Basic Demo</span>
+            </h1>
+
+            <!-- Card Start  -->
+            <div
+              class="row mt-3 mx-2 g-3 justify-content-center align-items-center"
+            >
+              <div class="col-md-5 col-lg-3">
+                <div
+                  id="teacher-card"
+                  class="access-card card text-center"
+                  style="width: 18rem"
+                >
+                  <i class="card-img bi bi-person-circle"></i>
+                  <div class="card-body p-0">
+                    <h5 class="card-title">Teachers</h5>
+                    <p class="card-text my-4">65</p>
+                    <a href="#" class="p-3 btn btn-primary d-block rounded-0"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3">
+                <div
+                  id="outsider-card"
+                  class="access-card card text-center"
+                  style="width: 18rem"
+                >
+                  <i class="card-img bi bi-person-circle"></i>
+                  <div class="card-body p-0">
+                    <h5 class="card-title">OUTSIDERS</h5>
+                    <p class="card-text my-4">5</p>
+                    <a href="#" class="p-3 btn btn-primary d-block rounded-0"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 col-lg-3">
+                <div
+                  id="business-card"
+                  class="access-card card text-center"
+                  style="width: 18rem"
+                >
+                  <i class="card-img bi bi-person-circle"></i>
+                  <div class="card-body p-0">
+                    <h5 class="card-title">BUSINESS</h5>
+                    <p class="card-text my-4">295</p>
+                    <a href="#" class="btn btn-primary d-block rounded-0 p-3"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 col-lg-3">
+                <div
+                  id="student-card"
+                  class="access-card card text-center"
+                  style="width: 18rem"
+                >
+                  <i class="card-img bi bi-person-circle"></i>
+                  <div class="card-body p-0">
+                    <h5 class="card-title">STUDENTS</h5>
+                    <p class="card-text my-4">265</p>
+                    <a href="#" class="btn btn-primary d-block rounded-0 p-3"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Activity time line -->
+            <section class="mt-5">
+              <div class="row">
+                <div class="col-lg-5 me-5">
+                  <h2 class="h1">Annual Bar Chat</h2>
+                  <div
+                    class="progress rounded-0"
+                    role="progressbar"
+                    aria-label="Success example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning text-dark"
+                      style="width: 70%"
+                    >
+                      70%
+                    </div>
+                  </div>
+                  <div
+                    class="progress my-3"
+                    role="progressbar"
+                    aria-label="Info example"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning text-dark"
+                      style="width: 50%"
+                    >
+                      50%
+                    </div>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Warning example"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning text-dark"
+                      style="width: 75%"
+                    >
+                      75%
+                    </div>
+                  </div>
+                  <div
+                    class="progress my-3"
+                    role="progressbar"
+                    aria-label="Danger example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning text-dark"
+                      style="width: 100%"
+                    >
+                      100%
+                    </div>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar "
+                    aria-label="Danger example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning text-dark"
+                      style="width: 100%"
+                    >
+                      100%
+                    </div>
+                  </div>
+                </div>
+                <div id="second-bar" class="col-lg-5 ms-5">
+                  <h2 class="h1">Monthly Bar Chat</h2>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Success example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar bg-success" style="width: 25%">
+                      25%
+                    </div>
+                  </div>
+                  <div
+                    class="progress my-3"
+                    role="progressbar"
+                    aria-label="Info example"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-info text-dark"
+                      style="width: 50%"
+                    >
+                      50%
+                    </div>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Warning example"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning text-dark"
+                      style="width: 70%"
+                    >
+                      70%
+                    </div>
+                  </div>
+                  <div
+                    class="progress my-3"
+                    role="progressbar"
+                    aria-label="Danger example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar bg-danger" style="width: 100%">
+                      100%
+                    </div>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Danger example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar bg-danger" style="width: 90%">
+                      90%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Review -->
+            <section id="review">
+              <div class="container-lg mt-5">
+                <div class="text-center">
+                  <h2 class="fw-bold">
+                    <i class="bi bi-stars"></i>
+                    Reviews
+                  </h2>
+                  <p class="lead">This is our customers' reviews</p>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-primary">
+                        <p>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </p>
+                        <h3>John Wick</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Obcaecati maiores, in provident doloribus
+                          aperiam consequatur reprehenderit at itaque similique
+                          quae.
+                        </p>
+                      </div>
+                      <div class="list-group-item list-group-item-danger">
+                        <p>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </p>
+                        <h3>Lisa</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Obcaecati maiores, in provident doloribus
+                          aperiam consequatur reprehenderit at itaque similique
+                          quae.
+                        </p>
+                      </div>
+                      <div class="list-group-item list-group-item-warning">
+                        <p>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                        </p>
+                        <h3>RM</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Obcaecati maiores, in provident doloribus
+                          aperiam consequatur reprehenderit at itaque similique
+                          quae.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+             <!-- Footer start -->
+      <section>
+        <div class="container">
+          <div class="p-5">
+            <div class="display-6 text-center">
+              @KyawThiha
+              <i class="bi bi-facebook"></i>
+            </div>
+            
+              
+            
+          </div>
+        </div>
+      </section>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

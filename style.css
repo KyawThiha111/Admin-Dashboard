@@ -1,0 +1,96 @@
+:root{
+    --first-dashboard-bg:#215a75;
+    --first-dashboard-bg-lighter:#256684;
+    --second-navbar-bg:#1d313a;
+    --second-navbar-bg-hover:#2c6985;
+    --card-color-1:#1d313a;
+    --card-color-2:#15a085;
+    --card-color-3:#fec106;
+    
+}
+#navbar-first{
+    background-color: var(--first-dashboard-bg) !important;
+}
+#firstnavbar-row{
+    background-color: var(--first-dashboard-bg-lighter) !important;
+}
+
+#second-nav{
+    background-color: var(--second-navbar-bg);
+}
+#second-nav .list-group-item{
+    background-color: var(--second-navbar-bg);
+    border: 0;
+    color: azure;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding: 10px 0px 10px 10px;
+}
+#second-nav .list-group-item:hover{
+    background-color:var(--second-navbar-bg-hover) ;
+}
+#second-nav ul>*:first-child{
+    color: var(--first-dashboard-bg-lighter);
+    margin-top: 10px;
+}
+.body-container{
+    background-color:var(--card-color-2);
+}
+#the-first-card{
+    background-color: var(--card-color);
+}
+.access-card{
+    padding-top: 30px;
+}
+.card-img{
+    font-size: 5rem;
+}
+#student-card{
+    background-color:rgba(224, 29, 29, 0.721);
+    color: white;
+}
+#student-card a{
+    background-color:var(--card-color-1);
+    border: none;
+    font-size: 1.2rem;
+}
+#teacher-card{
+    background-color: var(--card-color-3);
+    color: white;
+}
+#teacher-card a{
+    background-color: var(--card-color-1);
+    border: none;
+    font-size: 1.2rem;
+}
+#business-card{
+    background-color: var(--first-dashboard-bg);
+    color: white;
+}
+#business-card a{
+    background-color: var(--card-color-1);
+    border: none;
+    font-size: 1.2rem;
+}
+#outsider-card{
+    background-color: var(--first-dashboard-bg-lighter);
+    color: white;
+}
+#outsider-card a{
+    background-color: var(--card-color-1);
+    border: none;
+    font-size: 1.2rem;
+}
+
+.progress{
+    height: 20px;
+    border-radius: 0%;
+    font-size: 1rem;
+}
+
+@media(max-width:992px){
+    #second-bar{
+        margin-top: 20px;
+        margin-left: 0px !important; 
+    }
+}
